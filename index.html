@@ -158,6 +158,205 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-TCP-IP协议" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/04/TCP-IP%E5%8D%8F%E8%AE%AE/">TCP/IP协议</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/04/TCP-IP%E5%8D%8F%E8%AE%AE/" class="archive-article-date">
+  	<time datetime="2020-08-04T03:24:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="TCP-IP四层应用模型和OSI七层网络模型"><a href="#TCP-IP四层应用模型和OSI七层网络模型" class="headerlink" title="TCP/IP四层应用模型和OSI七层网络模型"></a>TCP/IP四层应用模型和OSI七层网络模型</h2><pre><code>四层应用模型
+应用层       HTTP DNS(域名解析系统) FTP SMTP TELNET
+传输层       TCP UDP
+网络层       IP ICMP ARP RARP
+网络接口层      各种物理通信网络接口
+
+七层网络模型
+应用层,表示层,会话层,传输层,网络层,数据链路层</code></pre><h2 id="TCP和UDP"><a href="#TCP和UDP" class="headerlink" title="TCP和UDP"></a>TCP和UDP</h2><pre><code>1、TCP面向连接（如打电话要先拨号建立连接）;UDP是无连接的，即发送数据之前不需要建立连接
+
+2、TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达;UDP尽最大努力交付，即不保   证可靠交付
+
+3、TCP面向字节流，实际上是TCP把数据看成一连串无结构的字节流;UDP是面向报文的    
+  UDP没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如IP电话，实时视频会议等）
+
+4、每一条TCP连接只能是点到点的;UDP支持一对一，一对多，多对一和多对多的交互通信
+
+5、TCP首部开销20字节;UDP的首部开销小，只有8个字节
+
+6、TCP的逻辑通信信道是全双工的可靠信道，UDP则是不可靠信道</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/04/TCP-IP%E5%8D%8F%E8%AE%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-HTTP协议" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/04/HTTP%E5%8D%8F%E8%AE%AE/">HTTP协议</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/04/HTTP%E5%8D%8F%E8%AE%AE/" class="archive-article-date">
+  	<time datetime="2020-08-04T02:38:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><pre><code>http协议是超文本传输协议，是用于从万维网服务器传输文本到本地浏览器的传送协议，是基于tcp/ip通信协议来传输数据的。
+http原理，http协议是作用在客户端和服务器端上的，电脑上的浏览器是作为http客服端通过使用url向http服务器端（web服务器）发送所有的请求。</code></pre><h2 id="http协议的特点"><a href="#http协议的特点" class="headerlink" title="http协议的特点"></a>http协议的特点</h2><pre><code>1.无状态 对客户端没有状态没有存储
+2.无连接 每次请求需要通过TCP三次握手
+3.基于请求和响应
+4.简单快捷,灵活
+5.通信使用明文,请求数据和响应不会对通信进行确认,无法保护数据的完整性</code></pre><h2 id="http报文"><a href="#http报文" class="headerlink" title="http报文"></a>http报文</h2><pre><code>http请求报文包括:请求行,请求头,空行,请求数据
+http响应报文:状态行,响应头,空行,相应数据</code></pre><h2 id="状态码"><a href="#状态码" class="headerlink" title="状态码"></a>状态码</h2><pre><code>200 成功
+301 永久重定向
+302 临时重定向
+404 网页不存在
+500 服务器错误
+503 稍后再来</code></pre><h2 id="常见的http请求头属性"><a href="#常见的http请求头属性" class="headerlink" title="常见的http请求头属性"></a>常见的http请求头属性</h2><pre><code>Accept 
+请求报文可通过一个“Accept”报文头属性告诉服务端 客户端接受什么类型的响应。 
+
+Referer 
+表示这个请求是从哪个URL过来的，假如你通过google搜索出一个商家的广告页面，你对这个广告页面感兴趣，鼠标一点发送一个请求报文到商家的网站，这个请求报文的Referer报文头属性值就是http://www.google.com。 
+
+Cache-Control 
+对缓存进行控制，如一个请求希望响应返回的内容在客户端要被缓存一年，或不希望被缓存就可以通过这个报文头达到目的。 
+Cache-Control: no-cache  
+
+User-Agent：产生请求的浏览器类型。
+Accept：客户端可识别的内容类型列表。
+Host：请求的主机名，允许多个域名同处一个IP地址，即虚拟主机。</code></pre><h2 id="响应头"><a href="#响应头" class="headerlink" title="响应头"></a>响应头</h2><pre><code>Cache-Control
+
+告诉浏览器或者其他客户，什么环境可以安全地缓存文档
+
+Connection
+
+当client和server通信时对于长链接如何进行处理
+
+Content-Encoding
+
+数据在传输过程中所使用的压缩编码方式
+
+Content-Type
+
+数据的类型
+
+Date
+
+数据从服务器发送的时间
+
+Expires
+
+应该在什么时候认为文档已经过期，从而不再缓存它？
+
+Server
+
+服务器名字。Servlet一般不设置这个值，而是由Web服务器自己设置
+
+Set-Cookie
+
+设置和页面关联的cookie
+
+Transfer-Encoding
+
+数据传输的方式</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/04/HTTP%E5%8D%8F%E8%AE%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hexo搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -178,27 +377,51 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>说明：必须安装好nodejs和git</p>
-<p>1.新建一个文件夹如blog，cmd打开文件夹所在位置</p>
-<p>2.安装插件 npm install -g hexo-cli</p>
-<p>3.输入 hexo -v查看版本，检查是否安装成功</p>
-<p>4.hexo init 初始化博客</p>
-<p>5.hexo start或hexo s启动博客</p>
-<p>6.写博客hexo n “我的第一个博客” 在source目录下的post目录下打开文件编写博客</p>
-<p>7.hexo clean 清除缓存</p>
-<p>8.重新生成hexo g</p>
-<p>9.hexo s 启动博客</p>
-<p>10.打开github 新建仓库 仓库名称为 昵称+github.io</p>
-<p>11.安装插件 npm install –save hexo-deployer -git</p>
-<p>12.修改-config.yml中的deploy部分<br>    type:git<br>    repo:仓库地址<br>    branch:master</p>
-<p>13.部署到github上 hexo d    </p>
-<p>14.下载主题 git clone https:github.com/litten/hexo-theme-yilia themes/yilia</p>
-<p>15.修改yilia文件中的_config.yml 把theme改为yilia </p>
-<p>16.hexo clean </p>
-<p>17.hexo g  hexo s</p>
-<p>18.hexo d 发送到github</p>
-<p>19.打开https:github仓库名就可以看到了</p>
+        <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><pre><code>说明:必须安装好node和git
 
+1.新建一个文件夹
+
+1.新建一个文件夹如blog，cmd打开文件夹所在位置
+
+2.安装插件 npm install -g hexo-cli
+
+3.输入 hexo -v查看版本，检查是否安装成功
+
+4.hexo init 初始化博客
+
+5.hexo start或hexo s启动博客
+
+6.写博客hexo n “我的第一个博客” 在source目录下的post目录下打开文件编写博客
+
+7.hexo clean 清除缓存
+
+8.重新生成hexo g
+
+9.hexo s 启动博客
+
+10.打开github 新建仓库 仓库名称为 昵称+github.io
+
+11.安装插件 npm install –save hexo-deployer -git
+
+12.修改-config.yml中的deploy部分
+
+    type:git
+    repo:仓库地址
+    branch:master
+
+13.部署到github上 hexo d
+
+14.下载主题 git clone https:github.com/litten/hexo-theme-yilia themes/yilia
+
+15.修改yilia文件中的_config.yml 把theme改为yilia
+
+16.hexo clean
+
+17.hexo g hexo s
+
+18.hexo d 发送到github
+
+19.打开https:github仓库名就可以看到了</code></pre>
       
 
       
@@ -260,18 +483,35 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>nodemon + 文件名  执行命令可以边修改代码边查看运行结果</p>
-<p> npm + install + 第三方模块名  命令 可以下载安装第三方模块  -g代表全局安装</p>
-<p> npm + uninstall + 第三方模块名 命令 可以卸载第三方模块  </p>
-<p> nrm ls 查询可用下载地址名称</p>
-<p> nrm use 下载地址名称     切换下载地址</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>gulp中提供的方法<br> gulp.src()获取任务处理的文件<br> gulp.dest()输出文件<br> gulp.task()建立gulp任务<br> gulp.watch():监控文件的变化</p>
-<p>gulp插件</p>
-<p>gulp-htmlmin  :html 文件压缩<br>gulp-csso   :压缩css<br>gulp-babel: JavaScript语法转换<br>gulp-less: less语法转换<br>gulp-uglify:压缩混淆JavaScript<br>gulp-file-include公共文件包含<br>browsersync 浏览器实现同步</p>
-<p>插件的使用步骤 1.下载 2.引用 3.调用</p>
-<p>快速生成package.json的命令 npm init -y</p>
-<p>拿到package.json文件后 可以通过npm install 命令下载所需模块</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>无</p>
+        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><pre><code>nodemon + 文件名  执行命令可以边修改代码边查看运行结果
+
+npm + install + 第三方模块名  命令 可以下载安装第三方模块  -g代表全局安装
+
+npm + uninstall + 第三方模块名 命令 可以卸载第三方模块  
+
+nrm ls 查询可用下载地址名称
+
+nrm use 下载地址名称     切换下载地址</code></pre><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><pre><code>gulp中提供的方法
+gulp.src()获取任务处理的文件
+gulp.dest()输出文件
+gulp.task()建立gulp任务
+gulp.watch():监控文件的变化
+
+gulp插件
+
+gulp-htmlmin  :html 文件压缩
+gulp-csso   :压缩css
+gulp-babel: JavaScript语法转换
+gulp-less: less语法转换
+gulp-uglify:压缩混淆JavaScript
+gulp-file-include公共文件包含
+browsersync 浏览器实现同步
+
+插件的使用步骤 1.下载 2.引用 3.调用
+
+快速生成package.json的命令 npm init -y
+
+拿到package.json文件后 可以通过npm install 命令下载所需模块</code></pre><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>无</p>
 
       
 

@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>hexo搭建个人博客 | Hexo</title>
+  <title>TCP/IP协议 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="步骤说明:必须安装好node和git  1.新建一个文件夹  1.新建一个文件夹如blog，cmd打开文件夹所在位置  2.安装插件 npm install -g hexo-cli  3.输入 hexo -v查看版本，检查是否安装成功  4.hexo init 初始化博客  5.hexo start或hexo s启动博客  6.写博客hexo n “我的第一个博客” 在source目录下的post">
+  <meta name="description" content="TCP&#x2F;IP四层应用模型和OSI七层网络模型四层应用模型 应用层       HTTP DNS(域名解析系统) FTP SMTP TELNET 传输层       TCP UDP 网络层       IP ICMP ARP RARP 网络接口层      各种物理通信网络接口  七层网络模型 应用层,表示层,会话层,传输层,网络层,数据链路层TCP和UDP1、TCP面向连接（如打电话要先拨号建立连">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2020/07/14/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="TCP&#x2F;IP协议">
+<meta property="og:url" content="http://yoursite.com/2020/08/04/TCP-IP%E5%8D%8F%E8%AE%AE/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="步骤说明:必须安装好node和git  1.新建一个文件夹  1.新建一个文件夹如blog，cmd打开文件夹所在位置  2.安装插件 npm install -g hexo-cli  3.输入 hexo -v查看版本，检查是否安装成功  4.hexo init 初始化博客  5.hexo start或hexo s启动博客  6.写博客hexo n “我的第一个博客” 在source目录下的post">
+<meta property="og:description" content="TCP&#x2F;IP四层应用模型和OSI七层网络模型四层应用模型 应用层       HTTP DNS(域名解析系统) FTP SMTP TELNET 传输层       TCP UDP 网络层       IP ICMP ARP RARP 网络接口层      各种物理通信网络接口  七层网络模型 应用层,表示层,会话层,传输层,网络层,数据链路层TCP和UDP1、TCP面向连接（如打电话要先拨号建立连">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-07-14T06:09:17.000Z">
-<meta property="article:modified_time" content="2020-08-04T03:12:38.714Z">
+<meta property="article:published_time" content="2020-08-04T03:24:17.000Z">
+<meta property="article:modified_time" content="2020-08-04T03:47:14.687Z">
 <meta property="article:author" content="Smart_Boy">
 <meta name="twitter:card" content="summary">
   
@@ -158,71 +158,45 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-TCP-IP协议" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo搭建个人博客
+      TCP/IP协议
     </h1>
   
 
         
-        <a href="/2020/07/14/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-07-14T06:09:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-14</time>
+        <a href="/2020/08/04/TCP-IP%E5%8D%8F%E8%AE%AE/" class="archive-article-date">
+  	<time datetime="2020-08-04T03:24:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><pre><code>说明:必须安装好node和git
+        <h2 id="TCP-IP四层应用模型和OSI七层网络模型"><a href="#TCP-IP四层应用模型和OSI七层网络模型" class="headerlink" title="TCP/IP四层应用模型和OSI七层网络模型"></a>TCP/IP四层应用模型和OSI七层网络模型</h2><pre><code>四层应用模型
+应用层       HTTP DNS(域名解析系统) FTP SMTP TELNET
+传输层       TCP UDP
+网络层       IP ICMP ARP RARP
+网络接口层      各种物理通信网络接口
 
-1.新建一个文件夹
+七层网络模型
+应用层,表示层,会话层,传输层,网络层,数据链路层</code></pre><h2 id="TCP和UDP"><a href="#TCP和UDP" class="headerlink" title="TCP和UDP"></a>TCP和UDP</h2><pre><code>1、TCP面向连接（如打电话要先拨号建立连接）;UDP是无连接的，即发送数据之前不需要建立连接
 
-1.新建一个文件夹如blog，cmd打开文件夹所在位置
+2、TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达;UDP尽最大努力交付，即不保   证可靠交付
 
-2.安装插件 npm install -g hexo-cli
+3、TCP面向字节流，实际上是TCP把数据看成一连串无结构的字节流;UDP是面向报文的    
+  UDP没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如IP电话，实时视频会议等）
 
-3.输入 hexo -v查看版本，检查是否安装成功
+4、每一条TCP连接只能是点到点的;UDP支持一对一，一对多，多对一和多对多的交互通信
 
-4.hexo init 初始化博客
+5、TCP首部开销20字节;UDP的首部开销小，只有8个字节
 
-5.hexo start或hexo s启动博客
-
-6.写博客hexo n “我的第一个博客” 在source目录下的post目录下打开文件编写博客
-
-7.hexo clean 清除缓存
-
-8.重新生成hexo g
-
-9.hexo s 启动博客
-
-10.打开github 新建仓库 仓库名称为 昵称+github.io
-
-11.安装插件 npm install –save hexo-deployer -git
-
-12.修改-config.yml中的deploy部分
-
-    type:git
-    repo:仓库地址
-    branch:master
-
-13.部署到github上 hexo d
-
-14.下载主题 git clone https:github.com/litten/hexo-theme-yilia themes/yilia
-
-15.修改yilia文件中的_config.yml 把theme改为yilia
-
-16.hexo clean
-
-17.hexo g hexo s
-
-18.hexo d 发送到github
-
-19.打开https:github仓库名就可以看到了</code></pre>
+6、TCP的逻辑通信信道是全双工的可靠信道，UDP则是不可靠信道</code></pre>
       
 
       
@@ -301,7 +275,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/14/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/04/TCP-IP%E5%8D%8F%E8%AE%AE/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -315,18 +289,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/08/04/HTTP%E5%8D%8F%E8%AE%AE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          HTTP协议
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/07/14/Node%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Node常用命令</div>
+    <a href="/2020/08/04/HTTP%E5%8D%8F%E8%AE%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTTP协议</div>
       <i class="icon-circle-right"></i>
     </a>
   
